@@ -1,0 +1,17 @@
+.section_formulario{
+  border:1px solid red;
+}
+h2{
+  color:red;
+}
+.formulario{
+   width: 400px;
+    border: 1px solid #1057fc;
+    text-align: center;
+    margin: 20px auto;
+   /* width: 450px;*/
+    height: 500px;
+    border-radius: 15px;
+  }
+
+

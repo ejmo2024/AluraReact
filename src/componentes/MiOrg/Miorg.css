@@ -1,0 +1,14 @@
+.orgSection{
+  border:1px solid red;
+  color:green;
+  display:flex;
+  width:100%;
+  justify-content:center;
+  align-items:center;
+}
+.orgSection img{
+  width:80px;
+  position:absolute;
+  right:30%;
+  cursor:pointer;
+}

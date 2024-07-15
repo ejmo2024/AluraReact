@@ -1,0 +1,16 @@
+.btn_enviar{
+  width: 90%;
+  height: 40px;
+  font-size: 16px;
+  background-color: #1057fc;
+  color: #c0c0c0;
+  /*border: 1px solid #778480;*/
+  border: none;
+  border-radius: 10px;
+  margin:5px;
+}
+
+
+.btn_enviar:hover{
+  cursor:pointer;
+}
