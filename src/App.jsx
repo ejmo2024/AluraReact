@@ -33,6 +33,7 @@ export default function App() {
 
   const registrarColaborador = (nuevoProducto) => {
     setListaProductos([...listaProductos, nuevoProducto]);
+    alert('Producto registrado correctamente');
   };
 
 
@@ -43,6 +44,7 @@ export default function App() {
   const actualizarProducto = (productoActualizado) => {
     setListaProductos(listaProductos.map(p => p.id === productoActualizado.id ? productoActualizado : p));
     setProductoEditando(null);
+   alert('Producto actualizado correctamente');
   };
 
 

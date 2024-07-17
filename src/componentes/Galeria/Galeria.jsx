@@ -15,6 +15,13 @@ const Galeria = ({ listaProductos, obtenerDatos, iniciarEdicion }) => {
             if (!res.ok) {
                 throw new Error('No se pudo eliminar el producto');
             }
+            if (res) {
+                alert('Se eliminara un producto');
+            }
+
+       
+            
+            
             obtenerDatos();
         } catch (error) {
             console.error('Error al eliminar producto:', error);

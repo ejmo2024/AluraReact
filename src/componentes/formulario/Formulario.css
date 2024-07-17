@@ -1,8 +1,11 @@
 .section_formulario{
-  border:1px solid red;
+  /*border:1px solid red;*/
+     width: 500px;
+
 }
 h2{
-  color:red;
+  color:#1057fc;
+  margin-top:20px;
 }
 .formulario{
    width: 400px;
@@ -10,8 +13,27 @@ h2{
     text-align: center;
     margin: 20px auto;
    /* width: 450px;*/
-    height: 500px;
+    height: 450px;
     border-radius: 15px;
+
+
+   margin:auto;
   }
 
+
+@media (max-width: 550px) {
+
+  .section_formulario{
+   /* border:1px solid red;*/
+       width: 90%;
+    
+
+  }
+  .formulario{
+    width:100%;
+    height: auto;
+   
+  }
+  
+  }
 

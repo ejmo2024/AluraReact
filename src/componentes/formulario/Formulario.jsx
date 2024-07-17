@@ -8,6 +8,11 @@ const Formulario = ({ onRegistrar, obtenerDatos, productoEditando, actualizarPro
     const [url, setUrl] = useState('');
     const [precio, setPrecio] = useState('');
 
+    
+    
+
+    
+
     useEffect(() => {
         if (productoEditando) {
             setNombre(productoEditando.name);
@@ -36,6 +41,7 @@ const Formulario = ({ onRegistrar, obtenerDatos, productoEditando, actualizarPro
                     throw new Error('No se pudo actualizar el producto');
                 }
 
+
                 const data = await res.json();
                 actualizarProducto(data);
             } else {
@@ -48,6 +54,9 @@ const Formulario = ({ onRegistrar, obtenerDatos, productoEditando, actualizarPro
                 if (!res.ok) {
                     throw new Error('No se pudo crear el producto');
                 }
+
+                
+                
 
                 const data = await res.json();
                 onRegistrar(data);
@@ -62,13 +71,17 @@ const Formulario = ({ onRegistrar, obtenerDatos, productoEditando, actualizarPro
         }
     };
 
+
+
+    
+
     return (
         <section className='section_formulario'>
             <form onSubmit={manejarEnvio} className='formulario'>
                 <h2>{productoEditando ? 'Editar producto' : 'Agregar producto'}</h2>
                 <CampoTexto
                     type='text'
-                    titulo="Nombre"
+                    titulo=""
                     placeholder="Ingrese Nombre"
                     required
                     valor={name}
@@ -76,7 +89,7 @@ const Formulario = ({ onRegistrar, obtenerDatos, productoEditando, actualizarPro
                 />
                 <CampoTexto
                     type='text'
-                    titulo="url Imagen"
+                    titulo=""
                     placeholder="Ingrese Url"
                     required
                     valor={url}
@@ -84,13 +97,13 @@ const Formulario = ({ onRegistrar, obtenerDatos, productoEditando, actualizarPro
                 />
                 <CampoTexto
                     type='number'
-                    titulo="precio"
+                    titulo=""
                     placeholder="Ingrese Precio"
                     required
                     valor={precio}
                     actualizarValor={setPrecio}
                 />
-                <Boton texto={productoEditando ? 'Actualizar' : 'Enviar'} />
+                <Boton texto={productoEditando ? 'Actualizar' : 'Guardar'} />
             </form>
         </section>
     );

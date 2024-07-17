@@ -2,7 +2,7 @@
   .label {
    
     text-align: left; /* Alinea el texto del label a la izquierda */
-    padding-right: 280px; /* Espacio a la derecha del label */
+  
     width: 100px; /* Puedes ajustar este valor según sea necesario */
   }
 
